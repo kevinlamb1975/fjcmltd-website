@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 210" role="img" aria-label="FJCM Franklyn James Customer Management">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00d4ff"/>
+      <stop offset="0.45" stop-color="#0d6efd"/>
+      <stop offset="0.78" stop-color="#7b2dff"/>
+      <stop offset="1" stop-color="#e100ff"/>
+    </linearGradient>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0a0f26" flood-opacity=".14"/></filter>
+  </defs>
+  <g filter="url(#s)">
+    <path d="M74 24h188c10 0 16 11 11 20l-13 27c-6 13-18 20-33 20H130v32h90c10 0 16 11 11 20l-12 25c-6 13-18 20-33 20h-56v53c0 13-10 23-23 23H58c-13 0-23-10-23-23V63c0-22 17-39 39-39z" fill="url(#g)"/>
+    <path d="M130 91c0 0-42 54-95 77V63c0-22 17-39 39-39h88c-25 25-33 47-32 67z" fill="#00d4ff" opacity=".55"/>
+  </g>
+  <g fill="#08143b">
+    <path d="M330 58h161v44H378v33h100v43H378v55h-48z"/>
+    <path d="M540 58h48v113c0 41-26 65-68 65h-45v-44h38c18 0 27-8 27-26z"/>
+    <path d="M652 58h139v44H676c-15 0-24 9-24 24v39c0 16 9 24 24 24h115v44H652c-31 0-48-17-48-48v-79c0-31 17-48 48-48z"/>
+    <path d="M815 58h48l67 77 67-77h48v175h-48V128l-54 62h-26l-54-62v105h-48z" transform="translate(-125 0)"/>
+  </g>
+  <path d="M284 175h54" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+  <text x="361" y="185" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="7" fill="url(#g)">FRANKLYN JAMES CUSTOMER MANAGEMENT</text>
+  <path d="M795 175h54" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+</svg>
