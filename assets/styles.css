@@ -1,55 +1,52 @@
-<!-- Cookie Banner -->
-<div id="cookie-banner" class="cookie-banner">
-    <p>
-        We use cookies to improve your browsing experience and analyse website traffic.
-        By clicking "Accept", you agree to our use of cookies.
-        <a href="privacy-policy.html">Privacy Policy</a>
-    </p>
+/* Cookie Banner */
 
-    <div class="cookie-buttons">
-        <button id="accept-cookies" class="btn">Accept</button>
-        <button id="reject-cookies" class="btn light">Reject</button>
-    </div>
-</div>
+.cookie-banner{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:20px;
+    box-shadow:var(--shadow);
+    z-index:9999;
+    display:none;
+}
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+.cookie-banner p{
+    margin:0 0 15px;
+    color:var(--navy);
+}
 
-    /* Mobile Menu */
-    const menuButton = document.querySelector(".mobile-note");
-    const menu = document.querySelector(".menu");
+.cookie-banner a{
+    color:var(--blue);
+    font-weight:600;
+}
 
-    if (menuButton && menu) {
-        menuButton.addEventListener("click", function () {
-            menu.classList.toggle("menu-open");
-        });
+.cookie-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+@media(max-width:850px){
+
+    .cookie-banner{
+        left:10px;
+        right:10px;
+        bottom:10px;
+        padding:16px;
     }
 
-    /* Cookie Banner */
-    const cookieBanner = document.getElementById("cookie-banner");
-    const acceptCookies = document.getElementById("accept-cookies");
-    const rejectCookies = document.getElementById("reject-cookies");
-
-    if (
-        cookieBanner &&
-        !localStorage.getItem("cookieConsent")
-    ) {
-        cookieBanner.style.display = "block";
+    .cookie-buttons{
+        flex-direction:column;
     }
 
-    if (acceptCookies) {
-        acceptCookies.addEventListener("click", function () {
-            localStorage.setItem("cookieConsent", "accepted");
-            cookieBanner.style.display = "none";
-        });
+    .cookie-buttons .btn{
+        width:100%;
+        justify-content:center;
     }
-
-    if (rejectCookies) {
-        rejectCookies.addEventListener("click", function () {
-            localStorage.setItem("cookieConsent", "rejected");
-            cookieBanner.style.display = "none";
-        });
-    }
-
-});
-</script>
+}
